@@ -1,0 +1,12 @@
+export const host = "http://localhost:3000/";
+export const backend = "http://localhost:5000/";
+export const fetchPincodes = host + "api/pincode";
+export const getProducts = backend + "api/product/";
+export const addUser = backend + "api/user/add-user";
+export const loginUser = '/api/login';
+export const addOrder = backend + "api/orders/add-order";
+export const signupUser = '/api/signup';
+export const forgotPassword = '/api/forgot';
+export const resetPassword = '/api/reset';
+export const adminLogin = '/api/admin/login';
+export const createAdmin = '/api/admin/create-admin';
