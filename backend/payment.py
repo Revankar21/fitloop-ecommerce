@@ -46,3 +46,23 @@ def create_payment():
     response = requests.post(url, json=paytmParams)
 
     return jsonify(response.json())
+
+
+
+@app.route("/paytm/callback", methods=["POST"])
+def callback():
+
+    data = request.form.to_dict()
+
+    checksum = data.pop("CHECKSUMHASH")
+
+    verify = PaytmChecksum.verifySignature(
+        data,
+        MKEY,
+        checksum
+    )
+
+    if verify:
+        return "Payment Success"
+
+    return "Checksum Failed"
