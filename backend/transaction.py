@@ -41,3 +41,14 @@ def create_transaction():
     response = requests.post(url, json=payload)
 
     return jsonify(response.json())
+
+
+
+
+# data base update
+order = Order.query.filter_by(order_id=order_id).first()
+
+order.payment_status = "Paid"
+order.transaction_id = result["body"]["txnId"]
+
+db.session.commit()
