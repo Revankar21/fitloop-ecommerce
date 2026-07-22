@@ -1,0 +1,21 @@
+User
+   ↓
+Checkout Page
+   ↓
+Python Backend
+   ↓
+Paytm Initiate Transaction
+   ↓
+Receive txnToken
+   ↓
+Frontend opens Paytm Checkout
+   ↓
+Payment
+   ↓
+Paytm Callback
+   ↓
+Verify Signature
+   ↓
+Check Transaction Status
+   ↓
+Update Order Status in Database
