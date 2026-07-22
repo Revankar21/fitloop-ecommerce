@@ -173,27 +173,7 @@ Payment Successful
 
 ---
 
-## 📂 Project Structure
 
-```
-fitloop-ecommerce/
-│
-├── app.py
-├── config.py
-├── requirements.txt
-├── routes/
-│   ├── auth.py
-│   ├── products.py
-│   ├── cart.py
-│   ├── orders.py
-│   └── payment.py
-├── templates/
-├── static/
-├── models/
-├── utils/
-├── .env
-└── README.md
-```
 
 ---
 
@@ -224,26 +204,3 @@ http://localhost:5000
 
 ---
 
-## 📌 Future Improvements
-
-- Wishlist functionality
-- Product reviews and ratings
-- Coupon and discount system
-- Email notifications
-- Order history
-- Inventory management
-- Sales analytics dashboard
-
----
-
-## 📄 License
-
-This project is developed for **educational and learning purposes**. You are free to use and modify it for personal or academic projects.
-
----
-
-## 👨‍💻 Author
-
-**Revankar21**
-
-GitHub: https://github.com/Revankar21
